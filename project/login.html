@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <div class="login">
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group radio-slider">
+                <label>Age Group:</label>
+                <input type="radio" id="above70" name="ageGroup" value="above70" checked>
+                <label for="above70">Above 70</label>
+                <input type="radio" id="below70" name="ageGroup" value="below70">
+                <label for="below70">Below 70</label>
+                <div class="slider"></div>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const above70Radio = document.getElementById("above70");
+            const body = document.body;
+            
+            above70Radio.addEventListener("change", function() {
+                if (above70Radio.checked) {
+                    body.classList.add("above-70");
+                } else {
+                    body.classList.remove("above-70");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

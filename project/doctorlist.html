@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctors List</h1>
+        <ul class="doctors-list">
+            <li>
+                <img src="doctor1.jpg" alt="Dr. John Doe">
+                <div class="doctor-info">
+                    <h2>Dr. John Doe</h2>
+                    <p>Specialization: Cardiology</p>
+                    <button class="book-appointment-btn">Book an Appointment</button>
+                </div>
+            </li>
+            <li>
+                <img src="doctor2.jpg" alt="Dr. Jane Smith">
+                <div class="doctor-info">
+                    <h2>Dr. Jane Smith</h2>
+                    <p>Specialization: Pediatrics</p>
+                    <button class="book-appointment-btn">Book an Appointment</button>
+                </div>
+            <!-- Add more doctor entries as needed -->
+        </ul>
+    </div>
+
+    <script>
+        // Add event listener for all buttons with class "book-appointment-btn"
+        document.querySelectorAll('.book-appointment-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Redirect to the appointment page
+                window.location.href = "patient-home.html";
+            });
+        });
+    </script>
+</body>
+</html>

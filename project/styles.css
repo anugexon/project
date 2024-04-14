@@ -1,0 +1,413 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+h1 {
+  background-color: white;
+  color: green;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+h1 span {
+  margin-right: 10px;
+}
+
+h1 img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the margin as needed */
+  background-color: #333; /* Example background color */
+  padding: 10px 20px; /* Example padding */
+}
+
+.services {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure items stay in a straight line */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.service {
+  text-align: center;
+  width: 30%; /* Adjust the width of each service */
+}
+
+.service img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure images maintain their aspect ratio */
+}
+
+.service h3 {
+  margin-top: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Login form styles */
+.login {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login div {
+  margin-bottom: 15px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="radio"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Apply dark mode */
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --background-color-dark: #333333;
+  --text-color-dark: #ffffff;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Patient Login page styles */
+.appointment-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background color */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-container h2 {
+  margin-bottom: 10px;
+}
+
+.appointment-container .form-group {
+  margin-bottom: 15px;
+}
+
+.appointment-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.appointment-container input[type="date"],
+.appointment-container input[type="time"],
+.appointment-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.appointment-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #98e5a5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.appointment-container button[type="submit"]:hover {
+  background-color: #98e5a5;
+}
+
+/* Apply styles to the registration form container */
+.register .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.register-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+/*Doctor list*/
+.doctor-list-book-appointment-btn {
+  display: inline-block;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.doctor-list-book-appointment-btn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.doctors-list li img {
+  width: 250px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some margin for spacing */
+}
+
+/*contactus.html*/
+
+/* Apply styles to the contact information section */
+
+.contact {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.address,
+.contact-details {
+  width: 50%;
+}
+
+/* Apply styles to message form section */
+.message-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.message-form h2 {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Apply styles to submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Apply styles to footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Add the sliding radio button styles here */
+.radio-slider {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  padding: 10px 20px;
+  background-color: #ddd;
+  cursor: pointer;
+  margin-right: -1px;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.slider {
+  height: 100%;
+  width: 50%;
+  background-color: #007bff;
+  position: relative;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+#above70:checked ~ .slider {
+  left: 0%;
+}
+
+#below70:checked ~ .slider {
+  left: 50%;
+}
+
+.above-70 {
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+/* Chat styles */
+#chatContainer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#chatMessages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+#userInput {
+  margin-top: 10px;
+}
+
+#messageInput {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#userInput button {
+  width: 25%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#userInput button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>Telehealth App</span>
+            <img src="C:\Users\anuge\Desktop\project\plus.png" alt="pluslogo">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctorlist.html">Doctors List</a></li>
+                <li><a href="patient-home.html">Book an Appointment</a></li> 
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="greeting-container">
+            <h2>Hello Patient Name</h2> <!-- Replace this with the patient's name -->
+        </div>
+        <div class="appointment-container">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Select Doctor</option>
+                        <option value="Dr. Smith">Dr. Smith</option>
+                        <option value="Dr. Johnson">Dr. Johnson</option>
+                        <option value="Dr. Lee">Dr. Lee</option>
+                    </select>
+                </div>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
